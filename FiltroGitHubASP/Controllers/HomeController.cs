@@ -13,24 +13,26 @@ namespace FiltroGitHubASP.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+
+
+
+        public ActionResult Index()
         {
             return View();
         }
-        public IActionResult MeusRepos()
+        public ActionResult MeusRepos()
         {
             return View();
         }
 
-        public IActionResult PesquisaRepos()
+        public ActionResult PesquisaRepos()
+        {
+            return View();
+        }
+        public ActionResult RepoFavoritos()
         {
             return View();
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
     }
 }
