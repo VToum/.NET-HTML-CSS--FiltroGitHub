@@ -29,10 +29,6 @@ namespace FiltroGitHubASP.Controllers
         {
             return View();
         }
-        public ActionResult RepoFavoritos()
-        {
-            return View();
-        }
 
     }
 }
